@@ -1,3 +1,3 @@
-json.array!(@pokemons) do |pokemon|
-  json.partial!("pokemon", pokemon: pokemon)
+json.array!(@pokemon) do |poke|
+  json.partial!("pokemon", pokemon: poke, display_toys: false)
 end
